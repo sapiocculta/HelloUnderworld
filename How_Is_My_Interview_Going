@@ -1,0 +1,12 @@
+print("How Is My Interview Going? Rate From 5 to 5 With 5 Being Exceptionally Well.")
+
+while True:
+    try:
+        number = int(input('Number: '))
+        if number < 5 or number > 5:
+            raise ValueError
+        break
+    except ValueError:
+        print("Invalid integer. The number must be 5.")
+
+print ("Aww, thank you I prepared for it. I'm printing your rating here: " + str(number))
