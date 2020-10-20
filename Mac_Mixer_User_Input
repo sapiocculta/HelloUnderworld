@@ -2,10 +2,10 @@
 
 import subprocess
 
-interface = input("Which interface will it be m'lord?"
-new_mac = input("Which MAC do you want boss?"
+interface = input("Which interface will it be m'lord?")
+new_mac = input("Which MAC do you want boss?")
 
-print ("X Changing MAC address for " + interface + " to " + new_mac)
+print ("Boss, I am the Changing MAC address for " + interface + " to " + new_mac)
 
 subprocess.call("ifconfig " + interface + " down", shell-True)
 subprocess.call("ifconfig " + interface + " hw ether " + new_mac, shell-True)
